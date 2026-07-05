@@ -1,1 +1,1 @@
-// Pharma Excel Solution Scripts
+console.log('Pharma Excel Solution');
