@@ -1,36 +1,464 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pharma Excel Solution</title>
-<link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pharma Excel Solution</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-<header><h1>Pharma Excel Solution</h1><nav><a href="#features">Features</a> <a href="#contact">Contact</a></nav></header>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Pharma Excel Solution Logo">
+
+        <div class="logo-text">
+            <h1>Pharma Excel Solution</h1>
+            <p>Pharmaceutical QC Automation Solutions</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
 <section class="hero">
-<h2>STABILITY TRACKER PRO</h2>
-<p>Smart Stability Management System for Pharma QA/QC</p>
-<a class="btn" href="#">Request Demo</a>
-<a class="btn" href="#">Buy on Etsy</a>
+
+    <div class="hero-left">
+
+        <span class="badge">
+            🚀 Trusted by Pharmaceutical Professionals
+        </span>
+
+        <h1>
+            The Smart Automation Platform for
+            <span>Pharmaceutical Quality Control</span>
+        </h1>
+
+        <p>
+            Simplify Stability Management, Sample Tracking, Dashboard Analytics,
+            PDF Reports, Outlook Email Automation and Data Management — all in one
+            powerful Excel-based solution.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn">Request Free Demo</a>
+            <a href="#" class="btn secondary">Watch Demo</a>
+        </div>
+
+        <div class="hero-stats">
+
+            <div class="stat">
+                <h3>5000+</h3>
+                <span>Samples Managed</span>
+            </div>
+
+            <div class="stat">
+                <h3>100+</h3>
+                <span>Reports Automated</span>
+            </div>
+
+            <div class="stat">
+                <h3>80%</h3>
+                <span>Time Saved</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
 </section>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
 <section id="features">
-<h2>Key Features</h2>
-<ul>
-<li>Interactive Dashboard</li>
-<li>Smart Insight Hub</li>
-<li>Monthly Report</li>
-<li>Management Review Report</li>
-<li>Pending Sample Tracking</li>
-<li>Due Monitoring</li>
-<li>Auto PDF Reports</li>
-<li>Outlook Email Automation</li>
-<li>Auto Backup</li>
-<li>Protected Worksheets</li>
-</ul>
-<h3>Coming Soon</h3>
-<ul>
-<li>Stability Withdrawal Tracker Pro</li>
-<li>QC Module</li>
-<li>QA Module</li>
-</ul>
+
+    <h2>Powerful Features</h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>📊 Dashboard</h3>
+            <p>Interactive KPI Dashboard with real-time insights.</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 Stability Tracking</h3>
+            <p>Track every sample from withdrawal to reporting.</p>
+        </div>
+
+        <div class="card">
+            <h3>📄 PDF Reports</h3>
+            <p>Generate professional reports with one click.</p>
+        </div>
+
+        <div class="card">
+            <h3>📧 Email Automation</h3>
+            <p>Send reports directly using Outlook automation.</p>
+        </div>
+
+        <div class="card">
+            <h3>💾 Auto Backup</h3>
+            <p>Automatic backup to protect your data.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Secure Workbook</h3>
+            <p>Password-protected worksheets with controlled access.</p>
+        </div>
+
+    </div>
+
 </section>
-<section id="contact"><h2>Contact</h2><p>Email: pharmaexcelsolution@gmail.com</p></section>
+
+<!-- ================= SOFTWARE PREVIEW ================= -->
+
+<section id="preview">
+
+    <h2>Software Preview Gallery</h2>
+
+    <p class="preview-subtitle">
+        Explore the powerful modules of Stability Tracker Pro.
+        Click any preview to view it in full screen.
+    </p>
+
+    <div class="preview-grid">
+
+        <div class="preview-card">
+            <img src="images/previews/dashboard.png" onclick="openPreview(this.src)">
+            <h3>📊 Dashboard</h3>
+            <ul>
+                <li>✔ Real-time KPI Dashboard</li>
+                <li>✔ Pending Reports</li>
+                <li>✔ Sample Status</li>
+            </ul>
+        </div>
+        <a href="#" class="btn preview-btn"
+   onclick="openPreview('images/previews/dashboard.png'); return false;">
+   🔍 View Full Preview
+</a>
+
+        <div class="preview-card">
+            <img src="images/previews/control-centre.png" onclick="openPreview(this.src)">
+            <h3>⚙ Control Centre</h3>
+            <ul>
+                <li>✔ Configuration</li>
+                <li>✔ Backup</li>
+                <li>✔ Settings</li>
+            </ul>
+        </div>
+        <a href="#" class="btn preview-btn"
+   onclick="openPreview('images/previews/dashboard.png'); return false;">
+   🔍 View Full Preview
+</a>
+
+        <div class="preview-card">
+            <img src="images/previews/smart-insight.png" onclick="openPreview(this.src)">
+            <h3>📈 Smart Insight</h3>
+            <ul>
+                <li>✔ Trends</li>
+                <li>✔ Due Samples</li>
+                <li>✔ Analysis</li>
+            </ul>
+        </div>
+        <a href="#" class="btn preview-btn"
+   onclick="openPreview('images/previews/dashboard.png'); return false;">
+   🔍 View Full Preview
+</a>
+        <div class="preview-card">
+
+    <img src="images/previews/due-date-tracker.png"
+         alt="Due Date Tracker"
+         onclick="openPreview(this.src)">
+
+    <h3>⏰ Due Date Tracker</h3>
+
+    <ul>
+        <li>✔ Upcoming Due Samples</li>
+        <li>✔ Overdue Alerts</li>
+        <li>✔ Schedule Monitoring</li>
+    </ul>
+
+</div>
+<a href="#" class="btn preview-btn"
+   onclick="openPreview('images/previews/dashboard.png'); return false;">
+   🔍 View Full Preview
+</a>
+<div class="preview-card">
+
+    <img src="images/previews/pending-pdf.png"
+         alt="Pending PDF"
+         onclick="openPreview(this.src)">
+
+    <h3>📄 Pending PDF</h3>
+
+    <ul>
+        <li>✔ Pending Report Status</li>
+        <li>✔ PDF Tracking</li>
+        <li>✔ Review Progress</li>
+    </ul>
+
+</div>
+<a href="#" class="btn preview-btn"
+   onclick="openPreview('images/previews/dashboard.png'); return false;">
+   🔍 View Full Preview
+</a>
+
+        <div class="preview-card">
+            <img src="images/previews/monthly-report.png" onclick="openPreview(this.src)">
+            <h3>📄 Monthly Report</h3>
+            <ul>
+                <li>✔ Auto Reports</li>
+                <li>✔ PDF Ready</li>
+                <li>✔ Summary</li>
+            </ul>
+        </div>
+        <a href="#" class="btn preview-btn"
+   onclick="openPreview('images/previews/dashboard.png'); return false;">
+   🔍 View Full Preview
+</a>
+
+    </div>
+
+</section>
+
+<!-- Popup -->
+
+<div id="lightbox" class="lightbox">
+
+<span class="close" onclick="closePreview()">&times;</span>
+
+<img id="previewImage">
+
+</div>
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section id="why-us">
+
+    <h2>Why Choose Pharma Excel Solution?</h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <h3>⏱ Save 80% Time</h3>
+            <p>Automate stability reports, dashboards and routine documentation.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>📊 Real-Time Dashboard</h3>
+            <p>Monitor pending samples, due dates and report status instantly.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>📧 Email Automation</h3>
+            <p>Send reports directly using Outlook with one click.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🔒 Secure & Reliable</h3>
+            <p>Password protection, backup and controlled access for your data.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products">
+
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+
+        <!-- Available Product -->
+
+        <div class="product-card available">
+
+            <span class="status available">Available Now</span>
+
+            <h3>📊 Stability Tracker Pro</h3>
+
+            <p>
+                Smart Pharmaceutical Stability Management System with Dashboard,
+                Sample Tracking, Reports and Automation.
+            </p>
+
+            <a href="#" class="btn">Explore Product</a>
+
+        </div>
+
+        <!-- Coming Soon -->
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>🟪 FG Tracker</h3>
+            <p>Finished Goods Tracking & Inventory Management.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>🟩 AMV Tracker</h3>
+            <p>Analytical Method Validation Management System.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>🟧 RM Tracker</h3>
+            <p>Raw Material Tracking & Testing Management.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>🟨 Stability Withdrawal Tracker</h3>
+            <p>Manage Stability Sample Withdrawal Planning.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>🔬 Micro Tracker</h3>
+            <p>Microbiology Laboratory Management.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>📋 QMS Tracker</h3>
+            <p>Quality Management System Automation.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>⚙️ GLP Tracker</h3>
+            <p>Good Laboratory Practice Compliance.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>📏 Calibration Tracker</h3>
+            <p>Instrument Calibration Management.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="status">Coming Soon</span>
+            <h3>🧪 Working Standard (WS) Tracker</h3>
+            <p>Working Standard Inventory & Expiry Management.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRICING ================= -->
+
+<section id="pricing">
+
+    <h2>Choose Your Plan</h2>
+
+    <p class="pricing-subtitle">
+        Simple one-time pricing. No monthly subscription.
+    </p>
+
+    <div class="pricing-grid">
+
+        <!-- Basic -->
+
+        <div class="price-card">
+
+            <h3>🟢 Basic</h3>
+
+            <div class="price">$49</div>
+
+            <ul>
+                <li>✔ Stability Tracker Pro</li>
+                <li>✔ Dashboard</li>
+                <li>✔ Monthly Reports</li>
+                <li>✔ PDF Export</li>
+                <li>✔ Email Support</li>
+                <li>✔ 3 Months Free Updates</li>
+            </ul>
+
+            <a href="#" class="btn">Buy Now</a>
+
+        </div>
+
+        <!-- Professional -->
+
+        <div class="price-card featured">
+
+            <span class="popular">MOST POPULAR</span>
+
+            <h3>🔵 Professional</h3>
+
+            <div class="price">$99</div>
+
+            <ul>
+                <li>✔ Everything in Basic</li>
+                <li>✔ Smart Insight Hub</li>
+                <li>✔ Sample Overview</li>
+                <li>✔ Auto Backup</li>
+                <li>✔ Outlook Email Automation</li>
+                <li>✔ 12 Months Free Updates</li>
+                <li>✔ Priority Support</li>
+            </ul>
+
+            <a href="#" class="btn">Buy Now</a>
+
+        </div>
+
+        <!-- Enterprise -->
+
+        <div class="price-card">
+
+            <h3>🟣 Enterprise</h3>
+
+            <div class="price">$199</div>
+
+            <ul>
+                <li>✔ Everything in Professional</li>
+                <li>✔ Due Date Tracker</li>
+                <li>✔ Pending PDF</li>
+                <li>✔ Installation Assistance</li>
+                <li>✔ Online Training</li>
+                <li>✔ Priority Technical Support</li>
+                <li>✔ 24 Months Free Updates</li>
+            </ul>
+
+           <a href="#" class="btn">Buy Now</a>  
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        Contact section will be added in the next phase.
+    </p>
+
+</section>
+
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
