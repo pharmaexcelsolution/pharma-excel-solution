@@ -545,7 +545,7 @@ cursor:pointer;
 =========================== */
 
 .faq-section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: #f8fbff;
 }
 
@@ -2171,4 +2171,171 @@ h2{
     z-index: -1;
     transition: transform .08s linear;
     filter: blur(18px);
+}
+
+/* Premium Page Background */
+
+body{
+    background:#f5f8fc;
+}
+
+section{
+    background:transparent;
+}
+/* ===== Premium Background ===== */
+
+body{
+    background: linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #ffffff 20%,
+        #f5f9ff 50%,
+        #ffffff 80%,
+        #f8fbff 100%
+    );
+}
+.btn:hover{
+    transform: translateY(-3px);
+    transition: .3s ease;
+    box-shadow:0 10px 25px rgba(0,91,187,.25);
+}
+/* ===== Premium Card Polish ===== */
+
+.feature-card,
+.product-card,
+.stat-card,
+.gallery-card,
+.why-card,
+.pricing-card{
+    border-radius:18px;
+    border:1px solid #e8eef8;
+    transition:all .35s ease;
+}
+
+.feature-card:hover,
+.product-card:hover,
+.stat-card:hover,
+.gallery-card:hover,
+.why-card:hover,
+.pricing-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,91,187,.12);
+}
+
+/* Section Heading Line */
+
+.section-heading::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    margin:12px auto 0;
+    border-radius:20px;
+    background:linear-gradient(90deg,#00c6ff,#005bea);
+}
+/* ===== HERO PREMIUM ===== */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:80px 8%;
+    background:
+    linear-gradient(135deg,
+    rgba(6,58,126,.95),
+    rgba(15,110,230,.90));
+}
+
+.hero-left{
+    max-width:620px;
+}
+
+.hero h1{
+    font-size:56px;
+    line-height:1.1;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin:25px 0;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:700px;
+    filter:drop-shadow(0 30px 60px rgba(0,0,0,.25));
+    transition:.4s;
+}
+
+.hero-right img:hover{
+    transform:translateY(-8px);
+}
+/* ===== HERO BACKGROUND OVERLAY ===== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:url("images/hero-bg.jpg") center/cover no-repeat;
+    opacity:.08;
+    z-index:0;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    right:-150px;
+    top:-120px;
+    background:radial-gradient(circle,
+        rgba(0,174,255,.35),
+        transparent 70%);
+    filter:blur(60px);
+}
+
+.hero-left,
+.hero-right{
+    position:relative;
+    z-index:2;
+}
+/* ===== HERO DASHBOARD ===== */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:80px 8%;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:720px;
+    border-radius:18px;
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+    transition:.4s ease;
+}
+
+.hero-right img:hover{
+    transform:translateY(-8px) scale(1.02);
 }
