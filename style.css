@@ -2339,3 +2339,195 @@ body{
 .hero-right img:hover{
     transform:translateY(-8px) scale(1.02);
 }
+/* ===========================================
+   SOFTWARE GALLERY LIGHTBOX
+=========================================== */
+
+.gallery-popup {
+    display: block;
+    cursor: pointer;
+}
+
+.gallery-popup img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-popup:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.92);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox img {
+    max-width: 95%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+    animation: zoomIn .25s ease;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 45px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.lightbox-close:hover {
+    color: #0ea5e9;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.demo-video h2 i {
+    color: #FF0000;
+    font-size: 28px;   /* 24px, 26px ya 30px bhi rakh sakte hain */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/* Demo Video Heading Icon */
+
+.demo-video h2 i{
+    color:#2563eb;
+    font-size:26px;
+    margin-right:10px;
+    vertical-align:middle;
+}
+/* ==========================
+   DEMO VIDEO PREMIUM CARD
+========================== */
+
+.demo-video {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.demo-video h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.demo-video h2 i {
+    color: #2563eb;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.demo-video p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Video Thumbnail */
+
+.video-thumbnail {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    display: block;
+    transition: transform .3s ease;
+}
+
+.video-thumbnail:hover img {
+    transform: scale(1.03);
+}
+
+
+/* Play Button */
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 70px;
+    height: 70px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 28px;
+}
+
+
+/* Video Popup */
+
+.video-popup {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.video-popup-content {
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+}
+
+
+.video-popup iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+}
+
+
+.close-video {
+    position: absolute;
+    right: -10px;
+    top: -45px;
+    
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
