@@ -1,3 +1,4 @@
+alert("JS Loaded");
 console.log('Pharma Excel Solution');
 function openPreview(image){
 
@@ -68,38 +69,6 @@ document.addEventListener("mousemove",(e)=>{
     glow.style.left=e.clientX+"px";
     glow.style.top=e.clientY+"px";
 });
-/* ==============================
-   SOFTWARE GALLERY LIGHTBOX
-============================== */
-
-const galleryImages = document.querySelectorAll(".gallery-popup");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeLightbox = document.querySelector(".lightbox-close");
-
-galleryImages.forEach((image) => {
-    image.addEventListener("click", function (e) {
-        e.preventDefault();
-        lightbox.style.display = "flex";
-        lightboxImg.src = this.href;
-    });
-});
-
-closeLightbox.addEventListener("click", function () {
-    lightbox.style.display = "none";
-});
-
-lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
-        lightbox.style.display = "none";
-    }
-});
-
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-        lightbox.style.display = "none";
-    }
-});
 /* ==========================
    DEMO VIDEO POPUP
 ========================== */
@@ -150,5 +119,84 @@ document.addEventListener("keydown", function(e){
         youtubeVideo.src = "";
 
     }
+
+});
+/*==========================================
+ SOFTWARE GALLERY LIGHTBOX
+==========================================*/
+const galleryImages = document.querySelectorAll(".gallery-img");
+const lightbox = document.querySelector(".gallery-lightbox");
+
+console.log(
+    document.querySelectorAll(".gallery-img").length,
+    document.querySelector(".gallery-lightbox"),
+    document.querySelector(".lightbox-image"),
+    document.querySelector(".close-gallery")
+);
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const galleryImages = document.querySelectorAll(".gallery-img");
+const lightbox = document.querySelector(".gallery-lightbox");
+const lightboxImage = document.querySelector(".lightbox-image");
+const closeGallery = document.querySelector(".close-gallery");
+
+
+if(!lightbox || !lightboxImage || !closeGallery){
+    return;
+}
+
+
+galleryImages.forEach(img => {
+
+    img.addEventListener("click", function(){
+
+        lightbox.classList.add("active");
+
+        lightboxImage.src = this.src;
+
+        lightboxImage.alt = this.alt;
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+
+closeGallery.addEventListener("click", function(){
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow = "auto";
+
+});
+
+
+lightbox.addEventListener("click", function(e){
+
+    if(e.target === lightbox){
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow = "auto";
+
+    }
+
+});
+
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow = "auto";
+
+    }
+
+});
+
 
 });
